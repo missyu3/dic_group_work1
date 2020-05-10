@@ -12,6 +12,18 @@ class AssignsController < ApplicationController
     end
   end
 
+  def update
+    @team = Team.friendly.find(params[:team_id])
+    assign = Assign.find(params[:id])
+    user = User.find(assign.user_id)
+    @team.owner = user
+    if @team.save
+      redirect_to @team, notice: I18n.t('views.messages.admin_rights_transferred')
+    else
+      redirect_to team_url(team), notice: I18n.t('views.messages.failed_to_assign')
+    end
+  end
+
   def destroy
     assign = Assign.find(params[:id])
     destroy_message = assign_destroy(assign, assign.user)

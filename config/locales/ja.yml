@@ -210,6 +210,7 @@ ja:
       update_article: '記事更新に成功しました！'
       assigned: 'アサインしました！'
       failed_to_assign: 'アサインに失敗しました！'
+      admin_rights_transferred: '管理者権限を譲渡しました'
       cannot_delete_the_leader: 'リーダーは削除できません。'
       cannot_delete_only_a_member: 'このユーザーはこのチームにしか所属していないため、削除できません。'
       cannot_delete_other_a_member: 'メンバーを削除する権限がありません。'
@@ -259,6 +260,7 @@ ja:
       delete: '削除'
       create: '作成'
       invite: '招待'
+      transfer: '権限移動'
     top:
       line1: 'このアプリケーションは、チームごと、議題ごとに別れて'
       line2: '特定のイシュー（議題）をメンバーで見やすく共有するためのアプリケーションです'
